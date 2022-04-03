@@ -108,6 +108,14 @@
 				]
 			}
 		],
+		"parameters": {
+			"arquivoorigem": {
+				"type": "string"
+			},
+			"arquivodestino": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
