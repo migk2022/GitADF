@@ -90,7 +90,10 @@
 						"referenceName": "ArquivoSalesDerived",
 						"type": "DatasetReference",
 						"parameters": {
-							"filename": "Sales_Derive.csv"
+							"filename": {
+								"value": "@pipeline().parameters.arquivoorigem",
+								"type": "Expression"
+							}
 						}
 					}
 				],
@@ -100,7 +103,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"output_filename": {
-								"value": "\"Sales_Derive_output.csv\"",
+								"value": "@pipeline().parameters.arquivodestino",
 								"type": "Expression"
 							}
 						}
