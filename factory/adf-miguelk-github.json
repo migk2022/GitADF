@@ -1,0 +1,9 @@
+{
+	"name": "adf-miguelk-github",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c66d9bdc-57b4-4b2b-80e5-8447b89313a2",
+		"tenantId": "329c67fe-24b0-40e5-b9c2-eb9b749b1c99"
+	}
+}
