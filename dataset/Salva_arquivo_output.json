@@ -1,12 +1,12 @@
 {
-	"name": "ArquivoSalesDerived",
+	"name": "Salva_arquivo_output",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_AzureBlobStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"filename": {
+			"output_filename": {
 				"type": "string"
 			}
 		},
@@ -16,10 +16,10 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": {
-					"value": "@dataset().filename",
+					"value": "@dataset().output_filename",
 					"type": "Expression"
 				},
-				"container": "container-financeiro-001"
+				"container": "output"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
@@ -28,15 +28,23 @@
 		},
 		"schema": [
 			{
-				"name": "Row",
+				"name": "Key",
 				"type": "String"
 			},
 			{
-				"name": "Country",
+				"name": "Name",
 				"type": "String"
 			},
 			{
-				"name": "Sales",
+				"name": "Phone",
+				"type": "String"
+			},
+			{
+				"name": "Last_m",
+				"type": "String"
+			},
+			{
+				"name": "Initial",
 				"type": "String"
 			}
 		]
