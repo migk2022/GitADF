@@ -9,6 +9,10 @@
 			"sqlservername": {
 				"type": "string",
 				"value": "sql-financeiro-dev"
+			},
+			"sqldb_financeiro": {
+				"type": "string",
+				"value": "sql-financeiro-dev"
 			}
 		}
 	},
