@@ -235,6 +235,14 @@
 							"parUserPWD": {
 								"value": "@pipeline().parameters.UserPWD",
 								"type": "Expression"
+							},
+							"parDBName": {
+								"value": "@pipeline().parameters.DBName",
+								"type": "Expression"
+							},
+							"parSQLServer": {
+								"value": "@pipeline().parameters.SQLServerName",
+								"type": "Expression"
 							}
 						}
 					}

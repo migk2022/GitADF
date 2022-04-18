@@ -6,7 +6,7 @@
 			"type": "LinkedServiceReference",
 			"parameters": {
 				"StringSQLServer": {
-					"value": "@dataset().parSQLServerName",
+					"value": "@dataset().parSQLServer",
 					"type": "Expression"
 				},
 				"DatabaseName": {
@@ -33,7 +33,7 @@
 			"parDBName": {
 				"type": "string"
 			},
-			"parSQLServerName": {
+			"parSQLServer": {
 				"type": "string"
 			}
 		},
