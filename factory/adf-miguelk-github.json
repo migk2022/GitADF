@@ -12,7 +12,7 @@
 			},
 			"sqldb_financeiro": {
 				"type": "string",
-				"value": "sql-financeiro-dev"
+				"value": "sql-financeiro-prod"
 			},
 			"userDBFinanceiro": {
 				"type": "string",
