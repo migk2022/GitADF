@@ -1,0 +1,39 @@
+{
+	"name": "execPipelinecomParametro",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute Pipeline1",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "teste1_parametroglobal",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"SQLServerName": {
+							"value": "@pipeline().globalParameters.sqlservername",
+							"type": "Expression"
+						},
+						"DBName": {
+							"value": "@pipeline().globalParameters.sqldb_financeiro",
+							"type": "Expression"
+						},
+						"UserName": {
+							"value": "@pipeline().globalParameters.userDBFinanceiro",
+							"type": "Expression"
+						},
+						"UserPWD": {
+							"value": "@pipeline().globalParameters.userPWDDBFinanceiro",
+							"type": "Expression"
+						}
+					}
+				}
+			}
+		],
+		"annotations": []
+	}
+}
