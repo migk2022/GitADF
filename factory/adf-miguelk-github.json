@@ -13,6 +13,10 @@
 			"sqldb_financeiro": {
 				"type": "string",
 				"value": "sql-financeiro-dev"
+			},
+			"userDBFinanceiro": {
+				"type": "string",
+				"value": "admsql01"
 			}
 		}
 	},
