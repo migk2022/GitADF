@@ -8,7 +8,7 @@
 			},
 			"sqlservername": {
 				"type": "string",
-				"value": "sql-financeiro-dev"
+				"value": "sql-bifinanceiro-prod.database.windows.net"
 			},
 			"sqldb_financeiro": {
 				"type": "string",
