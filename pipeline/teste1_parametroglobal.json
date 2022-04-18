@@ -226,7 +226,21 @@
 				"inputs": [
 					{
 						"referenceName": "AzureSqlTable_comParametros",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"parUserName": {
+								"value": "@pipeline().parameters.UserName",
+								"type": "Expression"
+							},
+							"parUserPWD": {
+								"value": "@pipeline().parameters.UserPWD",
+								"type": "Expression"
+							},
+							"parSQLServer": {
+								"value": "@pipeline().parameters.SQLServerName",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
@@ -240,12 +254,18 @@
 				]
 			}
 		],
-		"variables": {
+		"parameters": {
+			"SQLServerName": {
+				"type": "string"
+			},
+			"DBName": {
+				"type": "string"
+			},
 			"UserName": {
-				"type": "String"
+				"type": "string"
 			},
 			"UserPWD": {
-				"type": "String"
+				"type": "string"
 			}
 		},
 		"annotations": []
