@@ -5,6 +5,10 @@
 			"environment": {
 				"type": "string",
 				"value": "dev"
+			},
+			"sqlservername": {
+				"type": "string",
+				"value": "sql-financeiro-dev"
 			}
 		}
 	},
