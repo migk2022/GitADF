@@ -21,6 +21,10 @@
 			"userPWDDBFinanceiro": {
 				"type": "string",
 				"value": "teste123*"
+			},
+			"nomeservidorSQL": {
+				"type": "string",
+				"value": "nomeKV_DEV"
 			}
 		}
 	},
